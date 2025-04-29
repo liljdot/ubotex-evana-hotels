@@ -1,0 +1,1 @@
+export { whatsappContact } from "./contact";

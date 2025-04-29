@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -28,7 +30,9 @@ export default function RootLayout({
         className={`${playfairDisplay.className} w-screen items-center overflow-x-hidden antialiased`}
         data-theme="light"
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
