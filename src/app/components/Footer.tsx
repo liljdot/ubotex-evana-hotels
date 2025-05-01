@@ -2,7 +2,7 @@ import { Open_Sans, Inter } from "next/font/google";
 import ActionButton from "./ActionButton";
 import Image from "next/image";
 import footerLogo from "@/app/assets/header-logo.png";
-import { playfairDisplay } from "../layout";
+import { cormorantUpright } from "../layout";
 import { whatsappContact } from "../data";
 
 const openSans = Open_Sans({
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
 
                             {/* end  */}
                             <div className="pt-9.5 md:pt-12 xl:pt-1">
-                                <h1 className={"text-5xl md:text-6xl xl:text-[178px] text-center " + playfairDisplay.className}>EVANA HOTELS</h1>
+                                <h1 className={"text-5xl md:text-6xl xl:text-[178px] text-center " + cormorantUpright.className }>EVANA HOTELS</h1>
                             </div>
                         </div>
                     </div>
