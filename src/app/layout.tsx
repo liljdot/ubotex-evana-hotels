@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Open_Sans, Playfair_Display } from "next/font/google";
+import { Open_Sans, Cormorant_Upright } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-export const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
-  subsets: ["latin"]
+export const cormorantUpright = Cormorant_Upright({
+  variable: "--font-cormorant-upright",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"]
 })
 
 export const openSans = Open_Sans({
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.className} w-screen items-center overflow-x-hidden antialiased`}
+        className={`${cormorantUpright.className} w-screen items-center overflow-x-hidden antialiased`}
         data-theme="light"
       >
         <Navbar />
