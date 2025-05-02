@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Open_Sans } from "next/font/google"
 import { useEffect, useState } from "react"
 import DomainLink from "./DomainLink"
+import { whatsappContact } from "../data"
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -43,17 +44,15 @@ const Navbar: React.FC = () => {
     }, [])
 
     return (
-        <header className="w-full fixed bg-transparent/10 bg-clip-padding backdrop-filter backdrop-blur-2xl z-1000">
-            <div className="navbar shadow-sm px-8 py-4 md:py-8 xl:px-37.5 max-w-450 mx-auto">
+        <header className="w-full fixed bg-primary/38 bg-clip-padding backdrop-filter backdrop-blur-2xl z-1000">
+            <div className="navbar shadow-sm px-8 py-4 md:py-5 max-w-450 mx-auto">
                 <div className="navbar-start">
-                    <Link href={"/"} className="btn btn-ghost text-xl p-0 border">
-                        <Image src={headerLogo} alt="Ubotex Logo" className="w-16 md:w-33" />
+                    <Link href={"/"} className="btn btn-ghost text-xl p-0 h-fit">
+                        <Image src={headerLogo} alt="Ubotex Logo" className="w-16 md:w-27" />
                     </Link>
                 </div>
 
-
-
-                <div className="navbar-center bg-[#F5F5F5] rounded-full min-w-fit xl:px-19">
+                <div className="navbar-end min-w-fit">
                     <div className="dropdown dropdown-end md:hidden">
                         <div tabIndex={0} role="button" className="btn btn-ghost p-0 text-neutral">
                             <IoIosMenu className="size-6" />
@@ -64,21 +63,17 @@ const Navbar: React.FC = () => {
                         >
                             <li><DomainLink subDomain="www" className="text-base p-0">Home</DomainLink></li>
                             <li><a onClick={() => scrolltoSection("about")} className="text-base p-0">About Us</a></li>
+                            <li><Link href={whatsappContact} className="text-base p-0">Reservations</Link></li>
                             <li><a onClick={() => scrolltoSection("contact")} className="text-base p-0">Contact Us</a></li>
                         </ul>
                     </div>
 
-                    <ul className={`menu menu-horizontal gap-6 text-base-content px-1 hidden md:inline-flex ${openSans.className}`}>
-                        <li><DomainLink subDomain="www" className="hover:text-secondary hover:bg-transparent xl:text-lg p-0">Home</DomainLink></li>
-                        <li className={`${sectionInView == "about" && "relative after:absolute after:bg-primary after:w-full after:h-1 after:-bottom-10"}`}><a onClick={() => scrolltoSection("about")} className={`${sectionInView == "about" && "text-primary"} hover:text-secondary hover:bg-transparent xl:text-lg p-0`}>About Us</a></li>
-                        <li className={`${sectionInView == "contact" && "relative after:absolute after:bg-primary after:w-full after:h-1 after:-bottom-10"}`}><a onClick={() => scrolltoSection("contact")} className={`${sectionInView == "contact" && "text-primary"} hover:text-secondary hover:bg-transparent xl:text-lg p-0`}>Contact Us</a></li>
+                    <ul className={`menu menu-horizontal gap-6 text-neutral px-1 hidden md:inline-flex ${openSans.className}`}>
+                        <li><DomainLink subDomain="www" className="hover:text-primary xl:text-lg p-0">Home</DomainLink></li>
+                        <li className={`${sectionInView == "about" && "relative after:absolute after:bg-primary after:w-full after:h-1 after:-bottom-10"}`}><a onClick={() => scrolltoSection("about")} className={`${sectionInView == "about" && "text-primary"} hover:text-primary xl:text-lg p-0`}>About Us</a></li>
+                        <li className={`${sectionInView == "reservations" && "relative after:absolute after:bg-primary after:w-full after:h-1 after:-bottom-10"}`}><Link href={whatsappContact}  className={`${sectionInView == "reservations" && "text-primary"} hover:text-primary xl:text-lg p-0`}>Reservations</Link></li>
+                        <li className={`${sectionInView == "contact" && "relative after:absolute after:bg-primary after:w-full after:h-1 after:-bottom-10"}`}><a onClick={() => scrolltoSection("contact")} className={`${sectionInView == "contact" && "text-primary"} hover:text-primary xl:text-lg p-0`}>Contact Us</a></li>
                     </ul>
-                </div>
-
-                <div className="navbar-end">
-                    <button className={"btn btn-secondary shadow-none " + openSans.className}>
-                        Contact Us
-                    </button>
                 </div>
             </div>
         </ header>
