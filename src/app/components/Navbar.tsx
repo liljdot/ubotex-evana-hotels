@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
             <div className="navbar shadow-sm px-8 py-4 md:py-5 max-w-450 mx-auto">
                 <div className="navbar-start">
                     <Link href={"/"} className="btn btn-ghost text-xl p-0 h-fit">
-                        <Image src={headerLogo} alt="Ubotex Logo" className="w-16 md:w-27" />
+                        <Image src={headerLogo} alt="Evana Hotels Logo" className="w-16 md:w-27" />
                     </Link>
                 </div>
 
