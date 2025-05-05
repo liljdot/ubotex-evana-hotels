@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroSection from "./components/home/HeroSection";
 import AboutSection from "./components/home/AboutSection";
-import RedefinedSection from "./components/home/RedefinedSection";
+import RedefinedSection from "./components/home/LuxurySection";
 
 export default function Home() {
   return (
