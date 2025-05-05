@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
 
     return (
         <>
-            <section style={{ backgroundImage: `linear-gradient(to bottom, #000000EE, #00000000), url(${heroBG.src})` }} className="bg-cover bg-center pt-30 lg:pt-40 xl:pt-55 pb-12.5 md:pb-16 lg:pb-24 xl:pb-37">
+            <section style={{ backgroundImage: `linear-gradient(to bottom, #000000EE, #00000000), url(${heroBG.src})` }} className="bg-cover bg-center pt-30 md:pt-40 xl:pt-55 pb-12.5 md:pb-16 lg:pb-24 xl:pb-37">
                 <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-10">
                     <div className="flex flex-col gap-5 xl:gap-15 text-neutral text-center">
                         <h1 className="text-5xl lg:text-7xl xl:text-[158px] font-bold px-5 xl:px-18">Welcome
