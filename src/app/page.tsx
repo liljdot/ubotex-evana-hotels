@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroSection from "./components/home/HeroSection";
 import AboutSection from "./components/home/AboutSection";
+import RedefinedSection from "./components/home/RedefinedSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="max-w-450 mx-auto">
         <HeroSection />
         <AboutSection />
+        <RedefinedSection />
       </div>
     </main>
   );
