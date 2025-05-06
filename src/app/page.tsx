@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/home/HeroSection";
 import AboutSection from "./components/home/AboutSection";
 import RedefinedSection from "./components/home/LuxurySection";
+import RoomsSection from "./components/home/RoomsSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <RedefinedSection />
+        <RoomsSection />
       </div>
     </main>
   );
