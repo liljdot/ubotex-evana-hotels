@@ -7,7 +7,6 @@ import executiveRoomImage from "@/app/assets/executive-room-image.jpg"
 import deluxeRoomImage from "@/app/assets/deluxe-room-image.jpg"
 import businessRoomImage from "@/app/assets/business-room-image.jpg"
 import ambassadorialRoomImage from "@/app/assets/ambassadorial-room-image.jpg"
-import companyImage from "@/app/assets/company-image.jpg"
 
 interface RoomCardProps {
     title: string
