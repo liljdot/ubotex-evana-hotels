@@ -43,6 +43,7 @@ const LuxurySection: React.FC = () => {
                 className="bg-neutral
                             flex flex-col
                             px-11 md:px-16 lg:px-32 xl:px-49
+                            pb-9 md:pb-10.5 lg:pb-11 xl:pb-12.5
                             gap-10
                             ">
                 <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4">
