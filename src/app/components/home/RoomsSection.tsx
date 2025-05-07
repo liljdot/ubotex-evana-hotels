@@ -51,7 +51,7 @@ const RoomsSection: React.FC = () => {
                 py-9 xl:py-31">
                 <div
                     className="flex flex-col 
-                    gap-5 md:gap-4 lg:gap-6 xl:gap-8 
+                    gap-4 lg:gap-6 xl:gap-8 
                     px-11 md:px-16 lg:px-32 xl:px-49">
                     <h1 className="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold">Our Rooms</h1>
 

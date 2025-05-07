@@ -44,7 +44,7 @@ const LuxurySection: React.FC = () => {
                             flex flex-col
                             px-11 md:px-16 lg:px-32 xl:px-49
                             pb-9 md:pb-10.5 lg:pb-11 xl:pb-12.5
-                            gap-10
+                            gap-10 md:gap-12 lg:gap-16 xl:gap-20
                             ">
                 <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4">
                     <h1 className="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold">Luxury Redefined</h1>
