@@ -47,7 +47,7 @@ const GalleryModal: React.FC<{ setModalIsOpen: (val: boolean) => void, directory
 
     return (
         <>
-            <div id="my_modal_1" className="modal modal-top modal-open top-0 left-0 h-full max-h-full pt-17 md:pt-24 lg:pt-24 xl:pt-25">
+            <div id="my_modal_1" className="modal modal-top modal-open top-0 left-0 h-full max-h-full pt-20 md:pt-27 lg:pt-27 xl:pt-28">
                 <div className="modal-box w-full max-w-screen h-full px-7">
                     <Carousel setModalIsOpen={setModalIsOpen} images={images!} />
                     {/* <h3 className="font-bold text-lg">Hello!</h3>

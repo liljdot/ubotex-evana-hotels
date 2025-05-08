@@ -14,7 +14,7 @@ const GalleryImage: React.FC<{ image: StaticImageData, carouselIndex:number, set
                 setModalOpen(true)
                 router.push(`#slide${carouselIndex}`)
             }
-        } className="relative w-52.5 h-47 md:size-full shrink-0 overflow-hidden after:absolute after:size-full after:top-0 hover:after:bg-[#FFFFFF44] hover:cursor-pointer after:transition-all after:duration-300">
+        } className="relative w-52.5 h-47 md:size-full shrink-0 overflow-hidden after:absolute after:size-full after:top-0 hover:after:bg-[#FFFFFF44] hover:cursor-pointer after:transition-all after:duration-300 rounded-xl md:rounded-[2.5rem]">
             <Image fill src={image} alt="bar image" />
         </figure>
     )
@@ -23,12 +23,12 @@ const GalleryImage: React.FC<{ image: StaticImageData, carouselIndex:number, set
 const Gallery: React.FC = () => {
     const [modalIsOpen, setModalIsOpen] = useState<boolean>(false)
     const importAll = (r: any) => { return r.keys().map(r) }
-    const images = importAll(require.context("/public/gallery", false, /\.(png|jpe?g)$/))
+    const images = importAll(require.context("/public/gallery", false, /\.(png|jpe?g|JPE?G)$/))
 
     return (
         <>
             {modalIsOpen && <GalleryModal directory="" setModalIsOpen={setModalIsOpen} images={images} />}
-            <div className="flex flex-row md:grid grid-cols-3 xl:grid-cols-[repeat(3,_370px)] md:auto-rows-[200px] lg:auto-rows-[330px] xl:auto-rows-[358px] gap-2.5 md:gap-4 xl:gap-5 overflow-x-scroll md:overflow-visible justify-center">
+            <div className="flex flex-row md:grid grid-cols-3 xl:grid-cols-[repeat(3,_370px)] md:auto-rows-[200px] lg:auto-rows-[330px] xl:auto-rows-[358px] gap-2.5 md:gap-4 xl:gap-5 overflow-x-scroll md:overflow-visible md:justify-center pl-11 md:pl-0">
                 {
                     images.map((image: any, index: number) => <GalleryImage setModalOpen={setModalIsOpen} carouselIndex={index+1} key={"bar-image-" + index} image={image} />)
                 }
