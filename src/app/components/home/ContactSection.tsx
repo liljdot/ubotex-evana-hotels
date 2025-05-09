@@ -11,7 +11,7 @@ const openSans = Open_Sans({
 })
 
 const ContactSection: React.FC = () => {
-    const position = { lat: 5.005508505707144, lng: 7.9667609365457785 }
+    const position = { lat: 5.035980, lng: 7.937352 }
 
     return (
         <>
