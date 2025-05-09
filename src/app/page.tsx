@@ -6,6 +6,7 @@ import RoomsSection from "./components/home/RoomsSection";
 import StorySection from "./components/home/StorySection";
 import FacilitiesSection from "./components/home/FacilitiesSection";
 import GallerySection from "./components/home/GallerySection";
+import TestimonialsSection from "./components/home/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <StorySection />
         <FacilitiesSection />
         <GallerySection />
+        <TestimonialsSection />
       </div>
     </main>
   );
