@@ -64,6 +64,7 @@ const RoomsSection: React.FC = () => {
                     className="flex flex-row 
                     gap-2 md:gap-6
                     pl-11 md:pl-16 lg:pl-32 xl:pl-49
+                    pb-2
                     overflow-x-auto snap-x snap-mandatory">
                     <RoomCard
                         title="Standard"
