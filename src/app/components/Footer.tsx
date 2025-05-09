@@ -40,7 +40,8 @@ const Footer: React.FC = () => {
                                         <div className="grid grid-cols-2 gap-y-0.5 md:gap-y-1.5 gap-x-4">
                                             <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
                                                 <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Contact Us</p>
-                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">+234 8060711220</p>
+                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">+234 7074684703</p>
+                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">+234 7074684704</p>
                                             </div>
 
                                             <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
@@ -51,7 +52,7 @@ const Footer: React.FC = () => {
 
                                         <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
                                             <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Email</p>
-                                            <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">xouyo@xowue.com.ng</p>
+                                            <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">Evanahotels@yahoo.com</p>
                                         </div>
                                     </div>
 
@@ -61,7 +62,7 @@ const Footer: React.FC = () => {
                                         </figure>
 
                                         <div className="flex flex-col gap-1 text-right">
-                                            <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">#101, Aka Road Uyo, Akwa Ibom State</p>
+                                            <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">#41 Dominic Utuk Avenue, Uyo.</p>
                                             <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">© 2025 — Copyright</p>
                                         </div>
                                     </div>
