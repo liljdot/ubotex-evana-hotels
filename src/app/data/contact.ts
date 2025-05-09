@@ -1,1 +1,1 @@
-export const whatsappContact = "https://wa.link/ojcdrp"
+export const whatsappContact = "https://wa.link/h17mlg"
