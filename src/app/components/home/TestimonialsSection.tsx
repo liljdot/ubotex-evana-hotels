@@ -49,7 +49,7 @@ const TestimonialsSection: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-row gap-3 md:gap-4 xl:gap-5.5 pl-11 md:pl-16 lg:pl-32 xl:pl-49 overflow-x-auto snap-x snap-mandatory">
+                <div className="flex flex-row gap-3 md:gap-4 xl:gap-5.5 pl-11 md:pl-16 lg:pl-32 xl:pl-49 pb-2 overflow-x-auto snap-x snap-mandatory">
                     <TestimonialCard name="Ada & Kunle O." image={adaAndKunleImage}>
                         "From the moment we arrived, everything felt special. The room was beautiful, the staff were thoughtful, and the atmosphere was effortlessly romantic. Evana made our anniversary unforgettable."
                     </TestimonialCard>
