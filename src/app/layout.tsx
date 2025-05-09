@@ -16,8 +16,8 @@ export const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Ubotex Limited",
-  description: "Incorporated in 2002, Ubotex Limited is a leading Nigerian firm specializing in cement distribution, building materials, and transport haulage. Committed to excellence, we deliver reliable, efficient, and innovative services across a wide network. Backed by an experienced team, we strive to exceed customer expectations and lead in distribution and transportation across the South-South and beyond."
+  title: "Evana Hotels",
+  description: "Premium spaces, curated experiences, and personalized service, discover the new standard in hospitality."
 };
 
 export default function RootLayout({
