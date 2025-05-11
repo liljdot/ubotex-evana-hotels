@@ -26,10 +26,10 @@ const RoomCard: React.FC<RoomCardProps> = ({ title, price, image }) => {
             </figure>
             <div className="card-body justify-between h-27 md:h-48 px-3.5 md:px-9 py-2.5 md:py-8">
                 <div className="flex flex-col">
-                    <h2 className="card-title text-lg md:text-4xl font-semibold">{title}</h2>
+                    <h2 className="card-title text-2xl md:text-4xl font-semibold">{title}</h2>
                     <div className="flex flex-row gap-2.5 md:gap-4.5">
-                        <p className={"text-[0.65rem] md:text-base grow-0 " + openSans.className}>Starting from</p>
-                        <p className="text-base/3 md:text-3xl/4 font-semibold grow-0">₦ {price}</p>
+                        <p className={"text-sm md:text-base grow-0 " + openSans.className}>Starting from</p>
+                        <p className="text-xl/4 md:text-3xl/4 font-semibold grow-0">₦ {price}</p>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@ const RoomsSection: React.FC = () => {
                 <div
                     className="flex flex-row 
                     gap-2 md:gap-6
-                    pl-11 md:pl-16 lg:pl-32 xl:pl-49
+                    px-11 md:px-16 lg:px-32 xl:px-49
                     pb-2
                     overflow-x-auto snap-x snap-mandatory">
                     <RoomCard
