@@ -17,8 +17,8 @@ interface RoomCardProps {
 const RoomCard: React.FC<RoomCardProps> = ({ title, price, image }) => {
 
     return (
-        <div className="card w-41.5 md:w-117 rounded-3xl md:rounded-[4.75rem] shadow-sm shrink-0 snap-center">
-            <figure className="relative h-28.5 md:h-81">
+        <div className="card w-83 md:w-117 rounded-3xl md:rounded-[4.75rem] shadow-sm shrink-0 snap-center">
+            <figure className="relative h-57 md:h-81">
                 <Image
                     src={image}
                     alt={title + " room"}
