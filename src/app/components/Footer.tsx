@@ -4,6 +4,7 @@ import Image from "next/image";
 import footerLogo from "@/app/assets/header-logo.png";
 import { cormorantUpright } from "../layout";
 import { whatsappContact } from "../data";
+import Link from "next/link";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -52,7 +53,11 @@ const Footer: React.FC = () => {
 
                                         <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
                                             <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Email</p>
-                                            <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">Evanahotels@yahoo.com</p>
+                                            <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold hover:underline">
+                                                <Link href={""}>
+                                                    Evanahotels@yahoo.com
+                                                </Link>
+                                            </p>
                                         </div>
                                     </div>
 
@@ -72,7 +77,7 @@ const Footer: React.FC = () => {
 
                             {/* end  */}
                             <div className="pt-9.5 md:pt-12 xl:pt-1">
-                                <h1 className={"text-5xl md:text-6xl xl:text-[178px] text-center " + cormorantUpright.className }>EVANA HOTELS</h1>
+                                <h1 className={"text-5xl md:text-6xl xl:text-[178px] text-center " + cormorantUpright.className}>EVANA HOTELS</h1>
                             </div>
                         </div>
                     </div>
