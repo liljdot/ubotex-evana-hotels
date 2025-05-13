@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                                         <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
                                             <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Email</p>
                                             <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold hover:underline">
-                                                <Link href={""}>
+                                                <Link href={"mailto:https://evanahotels@yahoo.com"}>
                                                     Evanahotels@yahoo.com
                                                 </Link>
                                             </p>
