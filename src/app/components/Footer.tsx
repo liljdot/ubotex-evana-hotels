@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                                             <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Email</p>
                                             <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold hover:underline">
                                                 <Link href={"mailto:evanahotels@yahoo.com"}>
-                                                    Evanahotels@yahoo.com
+                                                    info@evanahotels.com
                                                 </Link>
                                             </p>
                                         </div>
