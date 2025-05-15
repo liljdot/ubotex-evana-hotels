@@ -4,6 +4,7 @@ import { Open_Sans } from "next/font/google";
 import { AdvancedMarker, APIProvider, InfoWindow, Map, Pin } from "@vis.gl/react-google-maps";
 import { IoIosPin } from "react-icons/io";
 import { MdEmail, MdPhone } from "react-icons/md";
+import Link from "next/link";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -47,7 +48,11 @@ const ContactSection: React.FC = () => {
                                     <MdEmail className="text-primary size-6 lg:size-8 xl:ize-10.5" />
                                     <span className="flex flex-col gap-2.5 text-base-content">
                                         <h6 className="text-base lg:text-lg xl:text-xl font-semibold">EMAIL ADDRESS</h6>
-                                        <p className={"text-xs " + openSans.className}>Evanahotels@yahoo.com</p>
+                                        <p className={"text-xs " + openSans.className}>
+                                            <Link href={"mailto:info@evanahotels.com"}>
+                                                info@evanahotels.com
+                                            </Link>
+                                        </p>
                                     </span>
                                 </li>
                             </ul>
