@@ -37,9 +37,9 @@ const AboutSection: React.FC = () => {
                             </figure>
 
                             <div className="card-body md:w-[50%] p-0">
-                                <h3 className="text-primary text-center md:text-left self-center md:self-start text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold max-w-53 md:max-w-96 lg:max-w-128 xl:max-w-158.5">
+                                <ContentSection.Heading className="text-center md:text-left self-center md:self-start max-w-53 md:max-w-96 lg:max-w-128 xl:max-w-158.5">
                                     Who are we?
-                                </h3>
+                                </ContentSection.Heading>
                                 <p className={"text-justify text-sm/6 md:text-base/8 xl:font-semibold text-base-content grow-0 " + openSans.className}>
                                     Evana Hotels is a modern oasis of comfort and elegance, offering a premium hospitality experience in the heart of Akwa Ibom State. As part of the UBOTEX Nigeria family, Evana Hotels upholds a legacy of excellence, blending local charm with world-class service to create memorable stays for every guest.
                                     <br />
