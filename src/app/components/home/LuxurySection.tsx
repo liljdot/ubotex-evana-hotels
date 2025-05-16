@@ -4,6 +4,7 @@ import interiorImage from "@/app/assets/interior-image.png"
 import diningImage from "@/app/assets/dining-image.png"
 import loungeImage from "@/app/assets/lounge-image.png"
 import { ReactNode } from "react";
+import ContentSection from "../ContentSection";
 
 interface LuxuryCardProps {
     title: string
@@ -39,11 +40,8 @@ const LuxurySection: React.FC = () => {
 
     return (
         <>
-            <section
-                className="bg-neutral
-                            flex flex-col
-                            px-11 md:px-16 lg:px-32 xl:px-49
-                            pb-9 md:pb-10.5 lg:pb-11 xl:pb-12.5
+            <ContentSection
+                className="pb-9 md:pb-10.5 lg:pb-11 xl:pb-12.5
                             gap-10 md:gap-12 lg:gap-16 xl:gap-20
                             ">
                 <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4">
@@ -68,7 +66,7 @@ const LuxurySection: React.FC = () => {
                         Unwind in style. Our lounge offers a quiet blend of comfort, charm, and classic sophistication.
                     </LuxuryCard>
                 </div>
-            </section>
+            </ContentSection>
         </>
     )
 }
