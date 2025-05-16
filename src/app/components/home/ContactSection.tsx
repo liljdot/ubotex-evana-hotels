@@ -5,6 +5,7 @@ import { AdvancedMarker, APIProvider, InfoWindow, Map, Pin } from "@vis.gl/react
 import { IoIosPin } from "react-icons/io";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Link from "next/link";
+import ContentSection from "../ContentSection";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -16,8 +17,12 @@ const ContactSection: React.FC = () => {
 
     return (
         <>
-            <section id="contact" className="target_section flex flex-col gap-6 md:gap-12 xl:gap-23">
-                <h1 className="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold px-11 md:px-16 lg:px-32 xl:px-49">Looking For Us?</h1>
+            <ContentSection
+                noPadding
+                id="contact"
+                className="target_section 
+                gap-6 md:gap-12 xl:gap-23">
+                <ContentSection.Heading className="px-11 md:px-16 lg:px-32 xl:px-49">Looking For Us?</ContentSection.Heading>
 
                 <div className="relative h-100 xl:h-175">
                     <div className={"hidden md:flex absolute -top-[10%] left-[5%] card bg-base-100 shadow-lg rounded-none z-1"}>
@@ -73,7 +78,7 @@ const ContactSection: React.FC = () => {
                         </AdvancedMarker>
                     </APIProvider>
                 </div>
-            </section>
+            </ContentSection>
         </>
     )
 }
