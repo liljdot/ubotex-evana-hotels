@@ -6,6 +6,7 @@ import proximityImage from "@/app/assets/proximity-image.jpg"
 import ActionButton from "../ActionButton";
 import { whatsappContact } from "@/app/data";
 import { ReactNode } from "react";
+import ContentSection from "../ContentSection";
 
 interface FacilitiesCardProps {
     reversed?: boolean
@@ -49,15 +50,13 @@ const FacilitiesSection: React.FC = () => {
 
     return (
         <>
-            <section
-                className="bg-neutral flex flex-col
-                px-11 md:px-16 lg:px-32 xl:px-49 
-                py-15 md:py-24 lg:py-32 xl:py-40
+            <ContentSection
+                className="py-15 md:py-24 lg:py-32 xl:py-40
                 gap-10 md:gap-12 lg:gap-16 xl:gap-20">
                 <div
                     className="flex flex-col 
                     gap-4 lg:gap-6 xl:gap-8">
-                    <h1 className="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold">Our Facilities</h1>
+                    <ContentSection.Heading>Our Facilities</ContentSection.Heading>
 
                     <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " + openSans.className}>
                         From fully serviced amenities to exquisite dining experiences — all within close reach of the city’s finest attractions, Evana Hotels offers the perfect blend of comfort, convenience, and sophistication.
@@ -77,7 +76,7 @@ const FacilitiesSection: React.FC = () => {
                         Stay close to business hubs, shopping, and top attractions, ensuring convenience and easy access throughout your stay at Ubotex Hotels.
                     </FacilitiesCard>
                 </div>
-            </section>
+            </ContentSection>
         </>
     )
 }

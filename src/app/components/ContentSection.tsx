@@ -9,7 +9,7 @@ interface ContentSectionProps {
 }
 
 interface HeadingProps {
-    children: ReactNode
+    children: string
     className?: string
 }
 
