@@ -3,13 +3,14 @@ import companyImage from "@/app/assets/company-image.jpg"
 // import winwFloatie1 from "@/app/assets/wine-floatie-1.png"
 import Image from "next/image";
 import ActionButton from "../ActionButton";
+import ContentSection from "../ContentSection";
 // import winwFloatie2 from "@/app/assets/wine-floatie-2.png"
 
 const AboutSection: React.FC = () => {
 
     return (
         <>
-            <section id="about" className="target_section bg-neutral px-11 md:px-16 lg:px-32 xl:px-49 py-15 md:py-24 lg:py-32 xl:py-40">
+            <ContentSection id="about" className="target_section py-15 md:py-24 lg:py-32 xl:py-40">
                 <div className="flex flex-col gap-15 md:gap-20 lg:gap-32 xl:gap-45">
                     <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 xl:gap-15">
                         <div className="card md:card-side flex-col-reverse self-center bg-neutral w-full max-w-103 md:max-w-full rounded-none gap-4 md:gap-6 lg:gap-8 xl:gap-11">
@@ -55,7 +56,7 @@ const AboutSection: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </ContentSection>
         </>
     )
 }
