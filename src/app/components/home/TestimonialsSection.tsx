@@ -5,6 +5,7 @@ import okonObongImage from "@/app/assets/okon-obong-image.png"
 import msPeculiarImage from "@/app/assets/ms-peculiar-image.png"
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
+import ContentSection from "../ContentSection";
 
 interface TestimonialCardProps {
     name: string
@@ -38,12 +39,12 @@ const TestimonialsSection: React.FC = () => {
 
     return (
         <>
-            <section
-                className="flex flex-col 
-                gap-7.5 md:gap-12 lg:gap-18 xl:gap-24 
+            <ContentSection
+                noPadding
+                className="gap-7.5 md:gap-12 lg:gap-18 xl:gap-24 
                 py-8 md:py-12 lg:py-20 xl:py-29">
                 <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 px-11 md:px-16 lg:px-32 xl:px-49">
-                    <h1 className="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold">What Our Guests Say About US</h1>
+                    <ContentSection.Heading>What Our Guests Say About US</ContentSection.Heading>
                     <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " + openSans.className}>
                         Real stories from guests who’ve experienced the warmth, elegance, and signature hospitality of Evana Hotels.
                     </p>
@@ -66,7 +67,7 @@ const TestimonialsSection: React.FC = () => {
                         "I celebrated my 30th birthday at Evana, and it was everything I dreamed of. Beautiful venue, attentive staff, and the best birthday dinner I’ve had. Thank you for making it magical."
                     </TestimonialCard>
                 </div>
-            </section>
+            </ContentSection>
         </>
     )
 }
