@@ -13,8 +13,14 @@ interface HeadingProps {
     className?: string
 }
 
+interface TextProps {
+    children: string
+    className?: string
+}
+
 const ContentSection: React.FC<ContentSectionProps> & {
     Heading: React.FC<HeadingProps>
+    Text: React.FC<TextProps>
 } = ({ children, noPadding, className, id }) => {
 
     return (
@@ -36,6 +42,16 @@ const Heading: React.FC<HeadingProps> = ({ children, className }) => {
     )
 }
 
+const Text: React.FC<TextProps> = ({ children, className }) => {
+
+    return (
+        <p className={"text-base-content text-sm md:text-base text-justify " +  className}>
+            {children}
+        </p>
+    )
+}
+
 ContentSection.Heading = Heading
+ContentSection.Text = Text
 
 export default ContentSection;
