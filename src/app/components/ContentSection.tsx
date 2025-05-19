@@ -45,7 +45,7 @@ const Heading: React.FC<HeadingProps> = ({ children, className }) => {
 const Text: React.FC<TextProps> = ({ children, className }) => {
 
     return (
-        <p className={"text-base-content text-sm md:text-base text-justify " +  className}>
+        <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " +  className}>
             {children}
         </p>
     )
