@@ -58,9 +58,9 @@ const RoomsSection: React.FC = () => {
                     px-11 md:px-16 lg:px-32 xl:px-49">
                     <ContentSection.Heading>Our Rooms</ContentSection.Heading>
 
-                    <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " + openSans.className}>
+                    <ContentSection.Text className={openSans.className}>
                         From intimate, well-appointed spaces to expansive suites for refined tastes, each room at Evana Hotels offers elegance, comfort, and timeless sophistication, tailored for every kind of stay.
-                    </p>
+                    </ContentSection.Text>
                 </div>
 
                 <div
