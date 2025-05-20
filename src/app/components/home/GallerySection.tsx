@@ -15,9 +15,9 @@ const GallerySection: React.FC = () => {
                         Our Gallery
                     </ContentSection.Heading>
 
-                    <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " + openSans.className}>
+                    <ContentSection.Text className={openSans.className}>
                         Explore moments of elegance, design, and experience, a visual journey through the timeless charm of Evana Hotels.
-                    </p>
+                    </ContentSection.Text>
                 </div>
 
                 <Gallery />
