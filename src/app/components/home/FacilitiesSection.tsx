@@ -58,9 +58,9 @@ const FacilitiesSection: React.FC = () => {
                     gap-4 lg:gap-6 xl:gap-8">
                     <ContentSection.Heading>Our Facilities</ContentSection.Heading>
 
-                    <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " + openSans.className}>
+                    <ContentSection.Text className={ openSans.className}>
                         From fully serviced amenities to exquisite dining experiences — all within close reach of the city’s finest attractions, Evana Hotels offers the perfect blend of comfort, convenience, and sophistication.
-                    </p>
+                    </ContentSection.Text>
                 </div>
 
                 <div className="flex flex-col gap-20 items-center">
