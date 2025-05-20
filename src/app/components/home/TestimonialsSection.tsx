@@ -45,9 +45,9 @@ const TestimonialsSection: React.FC = () => {
                 py-8 md:py-12 lg:py-20 xl:py-29">
                 <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4 px-11 md:px-16 lg:px-32 xl:px-49">
                     <ContentSection.Heading>What Our Guests Say About US</ContentSection.Heading>
-                    <p className={"text-sm lg:text-base text-base-content md:font-semibold text-justify " + openSans.className}>
+                    <ContentSection.Text className={openSans.className}>
                         Real stories from guests who’ve experienced the warmth, elegance, and signature hospitality of Evana Hotels.
-                    </p>
+                    </ContentSection.Text>
                 </div>
 
                 <div className="flex flex-row gap-3 md:gap-4 xl:gap-5.5 pl-11 md:pl-16 lg:pl-32 xl:pl-49 pb-2 overflow-x-auto snap-x snap-mandatory">
