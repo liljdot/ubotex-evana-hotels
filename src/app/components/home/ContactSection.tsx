@@ -52,7 +52,7 @@ const ContactSection: React.FC = () => {
                                             </p>
                                             <p className={"text-xs " + openSans.className}>
                                                 Whatsapp number : 
-                                                <Link href={"https:wa.me/" + whatsappTelephone} className="hover:underline">
+                                                <Link href={"https://wa.me/" + whatsappTelephone} className="hover:underline">
                                                     {" +234 707 468 4704"}
                                                 </Link>
                                             </p>
