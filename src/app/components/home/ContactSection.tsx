@@ -6,7 +6,7 @@ import { IoIosPin } from "react-icons/io";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Link from "next/link";
 import ContentSection from "../ContentSection";
-import { infoMail } from "@/app/data";
+import { infoMail, telephone, whatsappTelephone } from "@/app/data";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -44,8 +44,18 @@ const ContactSection: React.FC = () => {
                                     <span className="flex flex-col gap-2.5 text-base-content">
                                         <h6 className="text-base lg:text-lg xl:text-xl font-semibold">TELEPHONE</h6>
                                         <div>
-                                            <p className={"text-xs " + openSans.className}>National calls : +234 707 468 4703</p>
-                                            <p className={"text-xs " + openSans.className}>Whatsapp number : +234 707 468 4704</p>
+                                            <p className={"text-xs " + openSans.className}>
+                                                National calls :
+                                                <Link href={"tel:" + telephone} className="hover:underline">
+                                                    {" +234 707 468 4703"}
+                                                </Link>
+                                            </p>
+                                            <p className={"text-xs " + openSans.className}>
+                                                Whatsapp number : 
+                                                <Link href={"https:wa.me/" + whatsappTelephone} className="hover:underline">
+                                                    {" +234 707 468 4704"}
+                                                </Link>
+                                            </p>
                                         </div>
                                     </span>
                                 </li>
