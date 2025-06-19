@@ -41,8 +41,16 @@ const Footer: React.FC = () => {
                                         <div className="grid grid-cols-2 gap-y-0.5 md:gap-y-1.5 gap-x-4">
                                             <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
                                                 <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Contact Us</p>
-                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">+234 7074684703</p>
-                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">+234 7074684704</p>
+                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">
+                                                    <Link href={"tel:" + "+234 7074684703"} className="hover:underline">
+                                                        +234 7074684703
+                                                    </Link>
+                                                </p>
+                                                <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">
+                                                    <Link href={"tel:" + "+234 7074684704"} className="hover:underline">
+                                                        +234 7074684704
+                                                    </Link>
+                                                </p>
                                             </div>
 
                                             <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
