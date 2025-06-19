@@ -6,6 +6,7 @@ import { IoIosPin } from "react-icons/io";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Link from "next/link";
 import ContentSection from "../ContentSection";
+import { infoMail } from "@/app/data";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -54,8 +55,8 @@ const ContactSection: React.FC = () => {
                                     <span className="flex flex-col gap-2.5 text-base-content">
                                         <h6 className="text-base lg:text-lg xl:text-xl font-semibold">EMAIL ADDRESS</h6>
                                         <p className={"text-xs " + openSans.className}>
-                                            <Link href={"mailto:info@evanahotels.ng"} className="hover:underline">
-                                                info@evanahotels.ng
+                                            <Link href={"mailto:" + infoMail} className="hover:underline">
+                                                {infoMail}
                                             </Link>
                                         </p>
                                     </span>
