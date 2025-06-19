@@ -3,7 +3,7 @@ import ActionButton from "./ActionButton";
 import Image from "next/image";
 import footerLogo from "@/app/assets/header-logo.png";
 import { cormorantUpright } from "../layout";
-import { infoMail, whatsappContact } from "../data";
+import { infoMail, telephone, whatsappContact, whatsappTelephone } from "../data";
 import Link from "next/link";
 
 const openSans = Open_Sans({
@@ -42,13 +42,13 @@ const Footer: React.FC = () => {
                                             <div className="flex flex-col gap-1 md:gap-2 xl:gap-3">
                                                 <p className="text-[0.5rem] md:text-[10px] opacity-60 font-normal">Contact Us</p>
                                                 <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">
-                                                    <Link href={"tel:" + "+234 7074684703"} className="hover:underline">
-                                                        +234 7074684703
+                                                    <Link href={"tel:" + telephone} className="hover:underline">
+                                                        {telephone}
                                                     </Link>
                                                 </p>
                                                 <p className="text-[10px] md:text-sm xl:text-base font-normal xl:font-semibold">
-                                                    <Link href={"tel:" + "+234 7074684704"} className="hover:underline">
-                                                        +234 7074684704
+                                                    <Link href={"tel:" + whatsappTelephone} className="hover:underline">
+                                                        {whatsappTelephone}
                                                     </Link>
                                                 </p>
                                             </div>

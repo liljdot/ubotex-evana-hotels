@@ -1,1 +1,1 @@
-export { whatsappContact, infoMail } from "./contact";
+export { whatsappContact, infoMail, telephone, whatsappTelephone } from "./contact";
