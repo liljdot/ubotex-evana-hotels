@@ -54,8 +54,8 @@ const ContactSection: React.FC = () => {
                                     <span className="flex flex-col gap-2.5 text-base-content">
                                         <h6 className="text-base lg:text-lg xl:text-xl font-semibold">EMAIL ADDRESS</h6>
                                         <p className={"text-xs " + openSans.className}>
-                                            <Link href={"mailto:info@evanahotels.com"}>
-                                                info@evanahotels.com
+                                            <Link href={"mailto:info@evanahotels.ng"} className="hover:underline">
+                                                info@evanahotels.ng
                                             </Link>
                                         </p>
                                     </span>
