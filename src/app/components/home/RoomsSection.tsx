@@ -71,27 +71,27 @@ const RoomsSection: React.FC = () => {
                     overflow-x-auto snap-x snap-mandatory">
                     <RoomCard
                         title="Standard"
-                        price="40,000"
+                        price="65,000"
                         image={standardRoomImage}
                     />
                     <RoomCard
                         title="Executive"
-                        price="50,000"
+                        price="70,000"
                         image={executiveRoomImage}
                     />
                     <RoomCard
                         title="Royal deluxe"
-                        price="55,000"
+                        price="75,000"
                         image={deluxeRoomImage}
                     />
                     <RoomCard
                         title="Business Suite"
-                        price="65,000"
+                        price="80,000"
                         image={businessRoomImage}
                     />
                     <RoomCard
                         title="Ambassadorial suite"
-                        price="90,000"
+                        price="105,000"
                         image={ambassadorialRoomImage}
                     />
                 </div>
